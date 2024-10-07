@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./font.css">
+    <script src="js/script.js"></script>
+   
+    <link
+      rel="shortcut icon"
+      href="img/favicon_fotogram.png
+    "
+      type="image/x-icon"
+    />
+    <title>Fotogram</title>
+  </head>
+  <body onload="renderImg()">
+    <header>
+      <img class="header-logo" src="img/favicon_fotogram.png" alt="" />
+      <h1>Fotogram</h1>
+    </header>
+    <div id="background-container">
+      <section id="background-container" class="second-section">
+        <div id="content"></div>
+      </section>
+    </div>
+    <div id="lightbox-container" class="lightbox-container d-none">
+      <div class="buttons">
+
+        <button onclick="back()" class="btn">Back</button> <button onclick="closeLightBox()" class="btn">X</button> <button onclick="next()" class="btn">Next</button>
+        
+      </div>
+      <div id="lightbox" ></div>
+
+    </div>
+    <script src="js/three.js" ></script>
+    <script src="js/vanta.js" ></script>
+    <script src="js/background.js"></script>
+
+  </body>
+</html>
+
